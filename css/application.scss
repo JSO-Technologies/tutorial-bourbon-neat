@@ -1,0 +1,82 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
+
+body {
+  background-color: lighten(#fcbbcc, 5%);
+  font-family: $helvetica;
+  line-height: 1.5em;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+a, a:visited {
+  color: lighten($black, 10%);
+  @include transition(color 0.4s linear);
+}
+
+a:hover, a:active {
+  color: $black;
+}
+
+h1 {
+  font-size: 1.615em;
+  font-style: italic;
+  text-transform: uppercase;
+  
+  @include media($desktop) {
+    font-size: 3.615em;
+    line-height: 1.333em;
+  }
+}
+
+h2 {
+  @extend h1;
+  border-bottom: 1px solid $gray;
+  font-size: 1.538em;
+  line-height: 1.45em;
+}
+
+section {
+  @include outer-container;
+  
+  aside {
+    @include span-columns(12);
+    
+    @include media($desktop) {
+      @include span-columns(4);
+    }
+  }
+  
+  article {
+    @include span-columns(12);
+    
+    @include media($desktop) {
+      @include span-columns(8);
+    }
+  }
+  
+  figure {
+    margin-bottom: 1em;
+  }
+}
+
+figcaption {
+  color: darken($gray, 10%);
+  font-size: em(11, $base-value);
+  font-style: italic;
+  line-height: 1.45em;
+  margin: .5em 0;
+}
+
+footer {
+  font-size: em(12, $base-value);
+  font-style: italic;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.content-image {
+  @include fill-parent;
+}

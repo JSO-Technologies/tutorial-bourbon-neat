@@ -1,0 +1,94 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #fdd3de;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  max-width: 68.57143em;
+  margin: 0 auto;
+  padding: 0 2em; }
+
+a, a:visited {
+  color: #2b2b2b;
+  -webkit-transition: color 0.4s linear;
+  -moz-transition: color 0.4s linear;
+  transition: color 0.4s linear; }
+
+a:hover, a:active {
+  color: #111111; }
+
+h1, h2 {
+  font-size: 1.615em;
+  font-style: italic;
+  text-transform: uppercase; }
+  @media screen and (min-width: 850px) {
+    h1, h2 {
+      font-size: 3.615em;
+      line-height: 1.333em; } }
+
+h2 {
+  border-bottom: 1px solid #999999;
+  font-size: 1.538em;
+  line-height: 1.45em; }
+
+section {
+  *zoom: 1;
+  max-width: 68.57143em;
+  margin-left: auto;
+  margin-right: auto; }
+  section:before, section:after {
+    content: " ";
+    display: table; }
+  section:after {
+    clear: both; }
+  section aside {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    section aside:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 850px) {
+      section aside {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        section aside:last-child {
+          margin-right: 0; } }
+  section article {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    section article:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 850px) {
+      section article {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        section article:last-child {
+          margin-right: 0; } }
+  section figure {
+    margin-bottom: 1em; }
+
+figcaption {
+  color: gray;
+  font-size: 0.78571em;
+  font-style: italic;
+  line-height: 1.45em;
+  margin: 0.5em 0; }
+
+footer {
+  font-size: 0.85714em;
+  font-style: italic;
+  margin: 2em 0;
+  text-align: center; }
+
+.content-image {
+  width: 100%; }
